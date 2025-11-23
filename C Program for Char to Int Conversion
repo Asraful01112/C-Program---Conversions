@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char ch;
+    int num;
+
+    printf("Enter a digit character (0-9): ");
+    scanf(" %c", &ch); 
+
+    if (ch >= '0' && ch <= '9') {
+        num = ch - '0';
+        printf("Digit character to integer: %d\n", num);
+    } else {
+        printf("Invalid input! Not a digit.\n");
+    }
+
+    printf("\nEnter any character to get its ASCII code: ");
+    scanf(" %c", &ch);
+
+    num = (int)ch;
+    printf("Character '%c' to ASCII code: %d\n", ch, num);
+
+    return 0;
+}
