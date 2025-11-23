@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char str[50];
+    char *endptr;
+    long num;
+
+    printf("Enter a string representing a long integer: ");
+    scanf("%s", str);
+
+    num = strtol(str, &endptr, 10); 
+
+    if (*endptr != '\0') {
+        printf("Invalid input! Not a valid long integer.\n");
+    } else {
+        printf("Converted long integer: %ld\n", num);
+    }
+
+    return 0;
+}
