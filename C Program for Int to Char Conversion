@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    char ch;
+
+    printf("Enter an integer (0-9) to convert to character: ");
+    scanf("%d", &num);
+
+    if (num >= 0 && num <= 9) {
+        ch = num + '0';
+        printf("Numeric value to character: %c\n", ch);
+    } else {
+        printf("Invalid input! Number must be between 0 and 9.\n");
+    }
+
+    printf("\nEnter an ASCII code (0-127) to convert to character: ");
+    scanf("%d", &num);
+
+    if (num >= 0 && num <= 127) {
+        ch = (char)num;
+        printf("ASCII code to character: %c\n", ch);
+    } else {
+        printf("Invalid ASCII code! Must be between 0 and 127.\n");
+    }
+
+    return 0;
+}
