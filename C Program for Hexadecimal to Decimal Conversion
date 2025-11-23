@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char hex[20];
+    int decimal;
+
+    printf("Enter a hexadecimal number (e.g., 1A3F): ");
+    scanf("%s", hex);
+
+    decimal = (int)strtol(hex, NULL, 16);
+
+    printf("Decimal equivalent of %s is: %d\n", hex, decimal);
+
+    return 0;
+}
