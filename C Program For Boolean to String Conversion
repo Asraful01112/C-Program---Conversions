@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdbool.h> 
+
+int main() {
+    bool flag;
+    
+    printf("Enter a boolean value (0 for false, 1 for true): ");
+    scanf("%d", &flag);
+
+    const char *boolStr = flag ? "true" : "false";
+
+    printf("The boolean value as string: %s\n", boolStr);
+
+    return 0;
+}
